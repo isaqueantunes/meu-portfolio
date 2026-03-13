@@ -34,8 +34,9 @@ body {
   font-family: 'Ranch Water', sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  height: 100vh;
+}
 
-} 
 
 /* Estilos para tag <address> para remover o itálico padrão do navegador */
 address {
@@ -49,6 +50,7 @@ address {
   width: 100%;
   z-index: 10;
   padding: 0.3rem 0; /* reduzido de 0.5rem */
+  height: 6vh;
 }
 
 .nav-header {
@@ -91,7 +93,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* ocupa a altura total da viewport */
+  height: 100vh; /* ocupa a altura total da viewport */
 }
 
 .hero-container {
@@ -114,7 +116,7 @@ address {
 .hero-description {
     background-color: var(--cor-fundo-secundaria);
     display: flex;
-    height: 1040px;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -127,15 +129,21 @@ address {
     box-sizing: border-box;
 }
 
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #services, #contact {
     background-color: var(--cor-fundo-secundaria);
- 
 }
 
 #about {
     display: flex;
     flex-direction: column;
-    height: 1040px;
+    height: 100vh;
 }
 
 .section-title {
@@ -144,25 +152,80 @@ address {
     font-size: 3.0rem; 
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: -100px;
 }
-
+.services-title {
+    margin-top: 130px;
+}
 .section-subtitle{
-    display: flex;
-    justify-content: flex-end;
-
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    position: absolute;
+    right: 100px;
+    margin-top: 50px;
+    margin-right: 230px;
 }
 
 .about-content{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 200px;
+    padding-top: 120px;
 }
 
 .about-text {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 800px;
-    text-align: end;
+    width: 600px;
+    text-align: start;
+    margin-top: 40px;
+    margin-right: 100px;
+    font-size: 1.0rem;
+}
+
+.container-services-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items:center;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+}
+.area1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 190px;
+
+}
+.area2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.services{
+  height: 100vh;
+}
+
+.servico {
+  width: 50%;
+}
+.services-list {
+  width: 50%;
+  padding-left: 25%;
+}
+
+.toolbox {
+  width: 50%;
+}
+.tools-list {
+  width: 50%;
+  padding-left: 25%;
 }
